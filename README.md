@@ -2,17 +2,17 @@
 
 O Problema de saúde que será abordado é a medição da umidade do ar em ambientes internos. A umidade do ar pode impactar significativamente a saúde, especialmente em locais fechados onde as pessoas passam a maior parte do tempo. Um projeto que monitora e informa sobre a umidade do ar pode ser valioso para promover ambientes mais saudáveis. 
 
-### Problema: Baixa Umidade do Ar em Ambientes Internos
+## Problema: Baixa Umidade do Ar em Ambientes Internos
 
-   # Descrição do Problema:
+   Descrição do Problema:
 
 A baixa umidade do ar em ambientes internos pode resultar em vários problemas de saúde, incluindo tosse, coriza, irritação no nariz, garganta seca e sensível, sangramento nasal e obstrução das vias respiratórias, e em casos mais graves, problemas respiratórios crônicos, como crises de asma. 
 
-   #### Solução Proposta:
+   Solução Proposta:
 
 Desenvolver um projeto de Arduino que monitore a umidade do ar em ambientes internos, exibindo informações em tempo real e fornecendo alertas quando a umidade do ar atingir níveis preocupantes.
 
-   #### Componentes Necessários:
+   Componentes Necessários:
 
 1. **Sensor DHT11:** Utilize sensores para monitorar a umidade do ar. 
    
@@ -20,7 +20,7 @@ Desenvolver um projeto de Arduino que monitore a umidade do ar em ambientes inte
 
 3. **Luzes LED e Buzzer:** Para fornecer alertas visuais e sonoros quando a umidade do ar estiver ruim.
 
-   #### Funcionalidades Esperadas:
+   Funcionalidades Esperadas:
 
 1. **Leituras em Tempo Real:** Apresentar leituras contínuas da umidade do ar.
 
@@ -28,7 +28,7 @@ Desenvolver um projeto de Arduino que monitore a umidade do ar em ambientes inte
 
 3. **Histórico de Dados:** Armazenar dados para análise posterior e identificação de padrões.
 
-   ### Benefícios Potenciais:
+   Benefícios Potenciais:
 
 1. **Prevenção de Problemas de Saúde:** Alertas antecipados podem ajudar a evitar problemas de saúde relacionados à baixa umidade do ar.
 
