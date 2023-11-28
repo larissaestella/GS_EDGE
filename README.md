@@ -1,4 +1,6 @@
-# GS_EDGE
+# GLOBAL SOLUTION - EDGE
+
+Larissa Estella Gonçalves dos Santos - 552695
 
 O Problema de saúde que será abordado é a medição da umidade do ar em ambientes internos. A umidade do ar pode impactar significativamente a saúde, especialmente em locais fechados onde as pessoas passam a maior parte do tempo. Um projeto que monitora e informa sobre a umidade do ar pode ser valioso para promover ambientes mais saudáveis. 
 
