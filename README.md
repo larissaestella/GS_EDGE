@@ -15,11 +15,11 @@ Desenvolver um projeto de Arduino que monitore a umidade do ar em ambientes inte
 
     Componentes Necessários:
 
-1. **Sensor DHT11:** Utilize sensores para monitorar a umidade do ar. 
+1. **Potenciômetro:** Utilize para monitorar a umidade do ar.
    
-2. **Display:** Um display LCD usado para mostrar as leituras em tempo real.
+3. **Display:** Um display LCD usado para mostrar as leituras em tempo real.
 
-3. **Luzes LED:** Para fornecer alertas visuais quando a umidade do ar estiver ruim.
+4. **Luzes LED e Buzzer:** Para fornecer alertas visuais e sonoros quando a umidade do ar estiver ruim.
 
        Funcionalidades Esperadas:
 
