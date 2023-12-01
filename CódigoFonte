@@ -1,0 +1,59 @@
+#include <LiquidCrystal.h>
+LiquidCrystal lcd(9, 8, 7, 6, 5, 4);
+
+// Pino de conexão do potenciômetro
+#define POT_PIN A0
+
+// Pino de conexão do buzzer
+#define BUZZER_PIN 10
+
+// Pino de conexão do LED verde
+#define LED_GREEN_PIN 13
+
+// Pino de conexão do LED vermelho
+#define LED_RED_PIN 12
+
+// Limite inferior de umidade para alerta 
+#define UMIDADE_ALERTA 20
+
+void setup() {
+  Serial.begin(9600);
+
+  // Inicialização do display LCD
+  lcd.begin(16, 2);
+  lcd.setCursor(4, 0);
+  lcd.print("Umidade do Ar");
+
+  // Configuração dos pinos para LED e buzzer
+  pinMode(BUZZER_PIN, OUTPUT);
+  pinMode(LED_GREEN_PIN, OUTPUT);
+  pinMode(LED_RED_PIN, OUTPUT);
+}
+
+void loop() {
+  // Leitura da umidade simulada pelo potenciômetro
+  int umidade = 60;
+  int umidadeAlerta = 20;
+
+  // Exibição da umidade do ar no LCD
+  lcd.clear();
+  lcd.setCursor(0, 0);
+  lcd.print("Umidade: ");
+  lcd.print(umidadeAlerta);
+  lcd.print("%");
+
+  // Verificação se a umidade está abaixo do limite de alerta
+  if (umidade > UMIDADE_ALERTA) {
+    // Ativa o alerta (LED vermelho, LED verde desligado e buzzer)
+    digitalWrite(LED_RED_PIN, HIGH);
+    digitalWrite(LED_GREEN_PIN, LOW);
+    tone(BUZZER_PIN, 1000);
+  } else {
+    // Desativa o alerta (LED verde, LED vermelho desligado e sem som)
+    digitalWrite(LED_GREEN_PIN, HIGH);
+    digitalWrite(LED_RED_PIN, LOW);
+    noTone(BUZZER_PIN);
+  }
+  // Aguarda alguns segundos antes de realizar a próxima leitura
+  delay(2000);
+}
